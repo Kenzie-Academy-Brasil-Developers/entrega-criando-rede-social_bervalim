@@ -1,0 +1,142 @@
+.section__posts {
+  margin-top: 1.5625rem;
+}
+
+.section__posts > h3 {
+  font-weight: bold;
+  font-size: 1.32rem;
+}
+
+.section__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 18.75rem;
+}
+
+.section__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.875rem;
+}
+
+.section__content {
+  margin-top: 1.875rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.section__content > img {
+  width: 2.8rem;
+}
+.section__information {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6875rem;
+}
+
+.section__information > h3 {
+  font-weight: var(--fontWeightTitle2);
+  font-size: 1.125rem;
+  color: var(--greyColor1);
+}
+
+.section__information > p {
+  font-weight: var(--fontWeightText);
+  font-size: 0.875rem;
+  color: var(--greyColor2);
+}
+
+.section__paragraph {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.section__paragraph > h2 {
+  font-weight: var(--fontWeightTitle1);
+  color: var(--greyColor1);
+  font-size: 1.5625rem;
+  line-height: 2.125rem;
+}
+
+.section__paragraph > p {
+  font-weight: var(--fontWeightText);
+  font-size: 1rem;
+  color: var(--greyColor2);
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+
+.section__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.875rem;
+}
+
+.open__post {
+  background-color: var(--greyColor1);
+  border-radius: 0.25rem;
+  border: 2px splid var(--greyColor1);
+  padding: 0.625rem 0.625rem;
+  color: var(--whiteFixed);
+  font-weight: var(--fontWeightTitle2);
+  font-size: 0.875rem;
+}
+
+.open__post:hover {
+  background-color: var(--greyColor0);
+  color: var(--whiteFixed);
+  cursor: pointer;
+}
+
+.heart__section {
+  display: flex;
+  background: transparent;
+}
+
+#span__number {
+  margin: 1.125rem 0.8125rem;
+  font-size: 0.9375rem;
+  font-weight: var(--fontWeightText);
+  color: #000000;
+}
+
+.grey__button {
+  margin: 10px 0;
+  width: 2.1875rem;
+  cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+  .section__paragraph > h2 {
+    font-size: 1.25rem;
+  }
+
+  .section__paragraph > p {
+    font-size: 0.82rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .section__posts > h3 {
+    margin-top: 3.125rem;
+    margin-bottom: 1.25rem;
+  }
+  .section__list {
+    width: 36.875rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section__posts {
+    margin-top: 2.125rem;
+  }
+  .section__list {
+    width: 40rem;
+  }
+}

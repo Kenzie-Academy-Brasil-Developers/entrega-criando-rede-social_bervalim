@@ -7,7 +7,12 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./src/styles/header.css" />
+    <link rel="stylesheet" href="./src/styles/form.css" />
+    <link rel="stylesheet" href="./src/styles/aside.css" />
+    <link rel="stylesheet" href="./src/styles/sectionPosts.css" />
 
     <!-- FONTE -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,5 +24,176 @@
 
     <title>Criando rede social</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header__container">
+      <figure class="header__logo">
+        <img src="./src/assets/img/logo.svg" />
+      </figure>
+      <p>Sair</p>
+    </header>
+    <main>
+      <div class="input__aside">
+        <section class="form__container">
+          <div class="form__profile">
+            <img src="./src/assets/img/user1.svg" />
+            <div class="form__information">
+              <h3>Samuel Leão</h3>
+              <p>Front end Engineer</p>
+            </div>
+          </div>
+          <div class="form_post">
+            <form class="form__content">
+              <input
+                type="text"
+                placeholder="Digitar título do post"
+                class="form__input"
+              />
+              <textarea
+                type="text"
+                class="form__textarea"
+                placeholder="Digitar descrição do post"
+              ></textarea>
+              <button class="form__button">Postar</button>
+            </form>
+          </div>
+        </section>
+        <aside class="aside__profile">
+          <!-- Chumbado -->
+          <h3 class="aside__title">Sugestões para você seguir</h3>
+
+          <!-- chumbado -->
+          <ul class="aside__suggestions">
+            <li class="aside__item">
+              <div class="aside__content">
+                <img src="./src/assets/img/user2.svg" />
+                <div class="aside__information">
+                  <h3>Carlos Lima</h3>
+                  <p>Ux e UI Designer</p>
+                </div>
+              </div>
+              <button class="aside__button">Seguir</button>
+            </li>
+            <li class="aside__item">
+              <div class="aside__content">
+                <img src="./src/assets/img/user2.svg" />
+                <div class="aside__information">
+                  <h3>Carlos Lima</h3>
+                  <p>Ux e UI Designer</p>
+                </div>
+              </div>
+              <button class="aside__button">Seguir</button>
+            </li>
+            <li class="aside__item">
+              <div class="aside__content">
+                <img src="./src/assets/img/user2.svg" />
+                <div class="aside__information">
+                  <h3>Carlos Lima</h3>
+                  <p>Ux e UI Designer</p>
+                </div>
+              </div>
+              <button class="aside__button">Seguir</button>
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <section class="section__posts">
+        <h3>Posts</h3>
+        <ul class="section__list">
+          <li class="section__item">
+            <div class="section__content">
+              <img src="./src/assets/img/user3.svg" />
+              <div class="section__information">
+                <h3>Samuel Persuhn</h3>
+                <p>Front end Engineer</p>
+              </div>
+            </div>
+            <h2>
+              Empresa de Tecnologia da Informação abre vagas para programa de
+              estágio
+            </h2>
+            <div class="section__paragraph">
+              <p>
+                Hoje vamos conversar sobre como criar uma interface agradável
+                mesmo sem ter um design pronto feito por um profissional de UI
+                design.
+              </p>
+            </div>
+            <div class="section__button">
+              <button>Abrir Post</button>
+            </div>
+          </li>
+          <li class="section__item">
+            <div class="section__content">
+              <img src="./src/assets/img/user3.svg" />
+              <div class="section__information">
+                <h3>Samuel Persuhn</h3>
+                <p>Front end Engineer</p>
+              </div>
+            </div>
+            <h2>
+              Empresa de Tecnologia da Informação abre vagas para programa de
+              estágio
+            </h2>
+            <div class="section__paragraph">
+              <p>
+                Hoje vamos conversar sobre como criar uma interface agradável
+                mesmo sem ter um design pronto feito por um profissional de UI
+                design.
+              </p>
+            </div>
+            <div class="btnpost">
+              <button>Abrir Post</button>
+            </div>
+          </li>
+          <li class="section__item">
+            <div class="section__content">
+              <img src="./src/assets/img/user3.svg" />
+              <div class="section__information">
+                <h3>Samuel Persuhn</h3>
+                <p>Front end Engineer</p>
+              </div>
+            </div>
+            <h2>
+              Empresa de Tecnologia da Informação abre vagas para programa de
+              estágio
+            </h2>
+            <div class="section__paragraph">
+              <p>
+                Hoje vamos conversar sobre como criar uma interface agradável
+                mesmo sem ter um design pronto feito por um profissional de UI
+                design.
+              </p>
+            </div>
+            <div class="btnpost">
+              <button>Abrir Post</button>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <dialog class="modal__controller">
+      <div class="modal__container">
+        <div class="modal__content">
+          <img src="./src/assets/img/user3.svg" />
+          <div class="modal__information">
+            <h3>Samuel Persuhn</h3>
+            <p>Front end Engineer</p>
+          </div>
+          <button class="modal__close">X</button>
+        </div>
+        <h2>
+          Empresa de Tecnologia da Informação abre vagas para programa de
+          estágio
+        </h2>
+        <div class="modal__paragraph">
+          <p>
+            Hoje vamos conversar sobre como criar uma interface agradável mesmo
+            sem ter um design pronto feito por um profissional de UI design.
+          </p>
+        </div>
+      </div>
+    </dialog>
+    <script type="module" src="./src/scripts/index.js"></script>
+  </body>
 </html>

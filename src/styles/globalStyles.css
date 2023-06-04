@@ -1,0 +1,21 @@
+:root {
+  --brandColor1: #4263eb;
+  --brandColor2: #364fc7;
+  --greyColor0: #0a0c0d;
+  --greyColor1: #212529;
+  --greyColor2: #495057;
+  --greyColor3: #868e96;
+  --greyColor4: #dee2e6;
+  --greyColor5: #f8f9fa;
+  --greyOpacity1: rgba(33, 37, 41, 0.5);
+  --whiteFixed: #ffffff;
+  --likeColor: #d7443e;
+  --fontWeightTitle1: 700;
+  --fontWeightTitle2: 600;
+  --fontWeightText: 400;
+  --fontSizeTitle1: 1.75rem;
+  --fontSizeTitle2: 1.25rem;
+  --fontSizeText1: 1rem;
+  --fontSizeText2: 0.875rem;
+  --fontSizeText3: 0.75rem;
+}
