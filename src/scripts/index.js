@@ -137,13 +137,25 @@ function handleModal() {
     buttonCloseModal.addEventListener("click", function (event) {
       modalController.innerHTML = "";
 
-      const modalContent = createModal(event.target.dataset.postId);
+      const modalContent = createModal(Number(event.target.dataset.postId));
       modalController.appendChild(modalContent);
 
       modalController.showModal();
+
+      closeModal();
     });
   }
 }
+
+function closeModal() {
+  const modalClose = document.querySelector(".modal__close");
+  const modalController = document.querySelector(".modal__controller");
+  console.log(modalClose);
+  modalClose.addEventListener("click", function () {
+    modalController.close();
+  });
+}
+
 renderAsidePosts(suggestUsers);
 renderCardPosts(posts);
 handleModal();

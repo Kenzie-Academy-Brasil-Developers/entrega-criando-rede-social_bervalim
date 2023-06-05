@@ -1,0 +1,98 @@
+.modal__controller {
+  padding: 0;
+  width: 88%;
+  height: 35rem;
+  background-color: var(--whiteFixed);
+  border-radius: 0.25rem;
+  border: none;
+}
+
+.modal__controller::backdrop {
+  background-color: #ffffff70;
+}
+
+.modal__container {
+  width: 88%;
+  height: 35rem;
+  padding: 2.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  align-items: flex-start;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.modal__container h2 {
+  font-weight: var(--fontWeightTitle1);
+  color: var(--greyColor1);
+  font-size: 1.5rem;
+  width: 18rem;
+  line-height: 2rem;
+}
+
+.modal__paragraph > p {
+  font-weight: var(--fontWeightText);
+  font-size: 14.4px;
+  line-height: 1.75rem;
+  white-space: pre-wrap;
+  color: var(--greyColor2);
+}
+
+.modal__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.875rem;
+  width: 11.5rem;
+}
+.modal__content > img {
+  width: 2.5rem;
+}
+
+.modal__close {
+  position: absolute;
+  top: 15px;
+  right: -33px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: var(--greyColor2);
+  font-family: "nunito", "sans-serif";
+  background-color: var(--greyColor4);
+  cursor: pointer;
+}
+
+.modal__information > h3 {
+  margin-bottom: 0.625rem;
+  font-weight: var(--fontWeightTitle2);
+  font-size: 1rem;
+  color: var(--greyColor1);
+}
+
+.modal__information > p {
+  font-weight: var(--fontWeighText);
+  font-size: 0.8125rem;
+  color: var(--greyColor2);
+}
+
+@media (min-width: 319px) and (max-width: 374px) {
+  .modal__container h2 {
+    width: 16.5rem;
+  }
+
+  .modal__paragraph > p {
+    font-size: 0.8rem;
+    width: 16rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .modal__container {
+    width: 60%;
+    height: 5rem;
+  }
+  .modal__container h2 {
+    width: 39rem;
+  }
+}
