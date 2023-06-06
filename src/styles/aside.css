@@ -91,7 +91,8 @@
   .aside__item {
     display: flex;
     flex-direction: row;
-    width: 21.875rem;
+    justify-content: space-between;
+    width: 20rem;
   }
 
   .aside__button {

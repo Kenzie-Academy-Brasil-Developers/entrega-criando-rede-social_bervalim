@@ -51,7 +51,7 @@ main {
   main {
     padding: 6.25rem 2.8rem;
     max-width: 900px;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     display: block;
   }
@@ -64,7 +64,8 @@ main {
 
   .header__container > div {
     max-width: 900px;
-    width: 80%;
+    padding: 0;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
