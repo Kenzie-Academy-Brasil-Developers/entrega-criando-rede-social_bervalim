@@ -88,6 +88,9 @@
 }
 
 @media (min-width: 1024px) {
+  .modal__controller {
+    margin-left: 300px;
+  }
   .modal__container {
     width: 60%;
     height: 5rem;
