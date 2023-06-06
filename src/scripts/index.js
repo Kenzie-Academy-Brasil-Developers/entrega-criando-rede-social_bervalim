@@ -58,11 +58,11 @@ function createPosts(postObject) {
     if (
       buttonLikeImage.src === "http://127.0.0.1:5500/src/assets/img/unlike.png"
     ) {
-      buttonLikeImage.src = "./src/assets/img/like.png";
       spanNumber.innerText++;
+      buttonLikeImage.src = "./src/assets/img/like.png";
     } else {
-      buttonLikeImage.src = "./src/assets/img/unlike.png";
       spanNumber.innerText--;
+      buttonLikeImage.src = "./src/assets/img/unlike.png";
     }
   });
   divInformationPost.append(titleInformationPost, paragraphInformationPost);
