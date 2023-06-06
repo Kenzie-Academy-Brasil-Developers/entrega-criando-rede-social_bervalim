@@ -7,9 +7,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.25rem 1.25rem;
+  padding: 1.25rem 0;
 }
-.header__container > p {
+.header__container > div > p {
   font-weight: var(--fontWeightText);
   font-size: 0.75rem;
   color: var(--whiteFixed);
@@ -43,6 +43,10 @@ main {
 @media (min-width: 1024px) {
   main {
     padding: 6.25rem 2.8rem;
+    max-width: 900px;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
   }
 
   .header__container {
@@ -51,8 +55,20 @@ main {
     width: 100%;
   }
 
+  .header__container > div {
+    max-width: 900px;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+  }
+
   .input__aside {
     display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    justify-content: space-between;
     gap: 5.9375rem;
   }
 }

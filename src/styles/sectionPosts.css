@@ -108,11 +108,26 @@
 }
 
 .grey__button {
-  margin: 10px 0;
-  width: 2.1875rem;
+  background-image: url("./../assets/img/unlike.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
   cursor: pointer;
+  margin: 10px 0;
+  width: 30px;
+  height: 30px;
 }
 
+.red__button {
+  background-image: url("./../assets/img/heart.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 10px 0;
+  width: 30px;
+  height: 30px;
+}
 @media (min-width: 320px) and (max-width: 375px) {
   .section__paragraph > h2 {
     font-size: 1.25rem;

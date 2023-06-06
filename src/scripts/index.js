@@ -26,7 +26,7 @@ function createPosts(postObject) {
   const divButtonPost = document.createElement("div");
   const buttonPost = document.createElement("button");
   const buttonLike = document.createElement("button");
-  const buttonLikeImage = document.createElement("img");
+  const buttonLikeImage = document.createElement("button");
   const spanNumber = document.createElement("span");
 
   listItemPosts.classList.add("section__item");
@@ -48,21 +48,20 @@ function createPosts(postObject) {
   buttonPost.dataset.postId = postObject.id;
 
   buttonLike.classList.add("heart__section");
-  buttonLikeImage.src = "./src/assets/img/unlike.png";
-  buttonLikeImage.classList.add("grey__button");
+  buttonLikeImage.className = "grey__button";
 
   spanNumber.innerText = postObject.likes;
   spanNumber.id = "span__number";
 
   buttonLikeImage.addEventListener("click", function () {
-    if (
-      buttonLikeImage.src === "http://127.0.0.1:5500/src/assets/img/unlike.png"
-    ) {
+    console.log(buttonLikeImage.className);
+
+    if (buttonLikeImage.className == "grey__button") {
       spanNumber.innerText++;
-      buttonLikeImage.src = "./src/assets/img/heart.png";
+      buttonLikeImage.className = "red__button";
     } else {
       spanNumber.innerText--;
-      buttonLikeImage.src = "./src/assets/img/unlike.png";
+      buttonLikeImage.className = "grey__button";
     }
   });
   divInformationPost.append(titleInformationPost, paragraphInformationPost);
